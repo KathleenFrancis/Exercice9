@@ -1,0 +1,20 @@
+/*.animPS{
+    animation: ambiance 5s;
+    animation-fill-mode: forwards;
+    position: relative;
+    animation-iteration-count: infinite;
+}*/
+
+@keyframes ambiance {
+    from {
+        opacity:0;
+        font-size:0.8em;
+    }
+    50% {
+        font-size:1em;
+    }
+    to {
+        opacity:1;
+        font-size:0.8em;
+    }
+}

@@ -1,0 +1,21 @@
+.emoji{
+    animation: animEmoji 5s;
+    animation-fill-mode: forwards;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animEmoji {
+    from {
+        opacity:0;
+        scale:0;
+    }
+    50% {
+        scale:1;
+    }
+    to {
+        opacity:1;
+        scale:0;
+    }
+}
+
