@@ -11,7 +11,7 @@
 
 get_header();
 ?>
------------------- category-cours.php -------------------------
+<!------------------- category-cours.php ------------------------->
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
 
