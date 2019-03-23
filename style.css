@@ -196,7 +196,7 @@
 }
 
 #liste-cours .titre-tableau {
-  font-size: 5vw;
+  font-size: 4vw;
   color: black;
 }
 
@@ -226,13 +226,14 @@ h1::before, h2::before {
       -ms-grid-row-align: center;
       align-self: center;
   padding: 0 1em;
+  text-align: center;
 }
 
 /*=================================== MEDIAS QUERIES =============================*/
 @media only screen and (min-width: 600px) {
   .cours {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
   .cours .entry-title {
     background-color: aquamarine;
@@ -267,11 +268,12 @@ h1::before, h2::before {
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
-  .cours .entry-title a {
+  .cours .entry-title {
     background-color: #0e6d4d;
   }
-  .cours .entry-title a a {
+  .cours .entry-title a {
     color: #57c9ff;
+    font-size: 0.4em;
   }
 }
 /*# sourceMappingURL=style.css.map */

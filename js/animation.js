@@ -8,7 +8,7 @@ window.addEventListener('load', function(){
     sousTitre.classList.add("animSousTitre");
 
     let ps = document.querySelector('.ps');
-    ps.classList.add("animPS");
+    //ps.classList.add("animPS");
 
     //console.log(titre);
 })
