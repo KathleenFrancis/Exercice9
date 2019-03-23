@@ -221,12 +221,21 @@ h1::before, h2::before {
 }
 
 .cours .entry-title a {
-  font-size: 0.7em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   padding: 0 1em;
   text-align: center;
+  width: 100%;
+}
+
+.cours .entry-title a h3 {
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.cours .entry-title a h4 {
+  font-size: 1em;
 }
 
 .cours .session-1 {
@@ -266,6 +275,12 @@ h1::before, h2::before {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
   }
+  .cours h3 {
+    padding: 0.1em;
+  }
+  .cours h4 {
+    font-size: 0.5em;
+  }
 }
 
 @media only screen and (min-width: 1168px) {
@@ -276,6 +291,12 @@ h1::before, h2::before {
   .cours .entry-title a {
     color: #57c9ff;
   }
+  .cours .entry-title a h3 {
+    font-family: 0.1em;
+  }
+  .cours .entry-title a h4 {
+    font-family: 0.3em;
+  }
 }
 
 @media only screen and (min-width: 1379px) {
@@ -285,6 +306,12 @@ h1::before, h2::before {
   }
   .cours .entry-title a {
     color: #57c9ff;
+  }
+  .cours .entry-title a h3 {
+    font-size: 0.3em;
+    margin-bottom: 0.1em;
+  }
+  .cours .entry-title a h4 {
     font-size: 0.4em;
   }
 }

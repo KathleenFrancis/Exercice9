@@ -34,10 +34,18 @@ h1::before, h2::before {
     }
 
     .entry-title a{
-        font-size: 0.7em;
         align-self: center;
         padding: 0 1em;
         text-align: center;
+        width: 100%;
+
+        h3{
+            font-size: 0.7em;
+            font-weight: bold;
+        }
+
+        h4{font-size: 1em;}
+
     }
 
     .session-1{background-color: #999600fa;}
@@ -66,6 +74,10 @@ h1::before, h2::before {
     .cours {
         grid-template-columns: 1fr 1fr 1fr; 
         //.entry-title {background-color: rgb(72, 180, 144);}
+        h3{
+            padding: 0.1em;
+        }
+        h4{font-size: 0.5em;}
     }
 }
 
@@ -75,7 +87,11 @@ h1::before, h2::before {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         .entry-title {
             //background-color: rgb(42, 129, 100);
-            a{color: #57c9ff;}
+            a{
+                color: #57c9ff;
+                h3{font-family: 0.1em;}
+                h4{font-family: 0.3em;}
+            }
         }
     }
 }
@@ -88,7 +104,11 @@ h1::before, h2::before {
             //background-color: rgb(14, 109, 77);
             a{
                 color: #57c9ff;
-                font-size: 0.4em;
+                h3{
+                    font-size: 0.3em;
+                    margin-bottom: 0.1em;
+                }
+                h4{font-size: 0.4em;}
             }
         }
     }
