@@ -184,8 +184,11 @@
 }
 
 .site-branding .site-description {
+  background: #3a3a3a;
+}
+
+.site-branding .site-description a {
   color: white;
-  background: grey;
 }
 
 #liste-cours {
