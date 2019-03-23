@@ -229,14 +229,35 @@ h1::before, h2::before {
   text-align: center;
 }
 
+.cours .session-1 {
+  background-color: #999600fa;
+}
+
+.cours .session-2 {
+  background-color: #3d9900fa;
+}
+
+.cours .session-3 {
+  background-color: #350780fa;
+}
+
+.cours .session-4 {
+  background-color: #0c100ffa;
+}
+
+.cours .session-5 {
+  background-color: #002b62fa;
+}
+
+.cours .session-6 {
+  background-color: #5f001dfa;
+}
+
 /*=================================== MEDIAS QUERIES =============================*/
 @media only screen and (min-width: 600px) {
   .cours {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-  }
-  .cours .entry-title {
-    background-color: aquamarine;
   }
 }
 
@@ -245,18 +266,12 @@ h1::before, h2::before {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
   }
-  .cours .entry-title {
-    background-color: #48b490;
-  }
 }
 
 @media only screen and (min-width: 1168px) {
   .cours {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .cours .entry-title {
-    background-color: #2a8164;
   }
   .cours .entry-title a {
     color: #57c9ff;
@@ -268,12 +283,13 @@ h1::before, h2::before {
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
-  .cours .entry-title {
-    background-color: #0e6d4d;
-  }
   .cours .entry-title a {
     color: #57c9ff;
     font-size: 0.4em;
   }
+}
+
+[id^=post-] {
+  background-color: beige;
 }
 /*# sourceMappingURL=style.css.map */

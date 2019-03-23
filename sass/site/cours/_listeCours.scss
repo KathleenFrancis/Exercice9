@@ -40,6 +40,13 @@ h1::before, h2::before {
         text-align: center;
     }
 
+    .session-1{background-color: #999600fa;}
+    .session-2{background-color: #3d9900fa;}
+    .session-3{background-color: #350780fa;}
+    .session-4{background-color: #0c100ffa;}
+    .session-5{background-color: #002b62fa;}
+    .session-6{background-color: #5f001dfa;}
+
 }
 
 
@@ -50,7 +57,7 @@ h1::before, h2::before {
 @include media(mobile) {
     .cours {
         grid-template-columns: 1fr 1fr; 
-        .entry-title {background-color: aquamarine;}
+        //.entry-title {background-color: aquamarine;}
     }
 }
 
@@ -58,7 +65,7 @@ h1::before, h2::before {
 @include media(tablet) {
     .cours {
         grid-template-columns: 1fr 1fr 1fr; 
-        .entry-title {background-color: rgb(72, 180, 144);}
+        //.entry-title {background-color: rgb(72, 180, 144);}
     }
 }
 
@@ -67,7 +74,7 @@ h1::before, h2::before {
     .cours {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         .entry-title {
-            background-color: rgb(42, 129, 100);
+            //background-color: rgb(42, 129, 100);
             a{color: #57c9ff;}
         }
     }
@@ -78,7 +85,7 @@ h1::before, h2::before {
     .cours {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         .entry-title {
-            background-color: rgb(14, 109, 77);
+            //background-color: rgb(14, 109, 77);
             a{
                 color: #57c9ff;
                 font-size: 0.4em;

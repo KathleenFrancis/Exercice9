@@ -10,19 +10,20 @@
  */
 
 ?>
-<!--
-<article id="post-<?php //the_ID(); ?>" <?php //post_class(); ?>>
-	<header class="entry-header"> -->
-		<?php
-		/*if ( is_sticky() && is_home() && ! is_paged() ) {
-			printf( '<span class="sticky-post">%s</span>', _x( 'Featured', 'post', 'twentynineteen' ) );
-		} */
-		//echo get_the_title();
-		the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
-		?>
-	<!--/header--><!-- .entry-header -->
 
-	<!--footer class="entry-footer">
-		<?php //twentynineteen_entry_footer(); ?>
-	</footer--><!-- .entry-footer -->
-</article><!-- #post-${ID} -->
+
+<?php
+	$sigle = substr(get_the_title(),0,7);
+	$session = substr($sigle,4,1);
+	$nomCours = substr(get_the_title(),7);
+
+	echo '<div class="entry-title'
+	. ' session-' . $session
+	. '  "><a href="'; 
+	echo esc_url( get_permalink()) . '"';
+	echo ' rel="bookmark"><h3>' .$sigle.'</h3><h4>' .$nomCours. '</h4></a></div>';
+	//the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
+?>
+	
+
+	
